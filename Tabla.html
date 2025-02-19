@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periodica</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+ <style>
+    :root {
+        margin: 0em;
+        padding: 0px;
+        --fuente-helvetica: Helvetica, sans-serif;
+        background-color: rgba(98, 112, 36, 255);
+        box-sizing: border-box;
+        font-family: breakingbadfont;
+        background-image: url("img/cabecera.png");
+        background-size: auto;
+        background-position: top;
+        background-attachment: scroll;
+        background-repeat: no-repeat; 
+    }
+    @font-face {
+            font-family: 'BreakingBad';
+            src: url("css/Breaking\ Bad.ttf") format(truetype);
+        }
+    
+    .txtPequena {
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .txtGrande {
+        font-family: 'BreakingBad';
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }    
+    
+    .tabla {
+        background-color: #0c3e11;
+    }
+    .contenedor-cabecera{
+        background-image: url("img/cabecera.png");
+        background-size: cover;
+        background-position: center;
+        margin: 10em;
+        padding: 0%;
+        top: auto;     
+    }
+    
+    .tabla1{
+        border-collapse: collapse;
+        margin: auto;
+        table-layout: fixed;
+    }
+    
+    td {
+        border: 10px solid black;
+        width: 80px;
+        height: 80px;
+        box-sizing: border-box;
+        text-align: center;
+        
+    }
+    
+    .celda_rowspan {
+        width: 80px;
+        height: 160px;
+    }
+    
+    .celda_rowspan img {
+        width: 100%;
+        max-width: 80px; 
+        height: 100%;
+        max-height: 160px; 
+        object-fit: contain;
+        display: flexbox;
+        margin: 0;
+    
+    } 
+
+    .tabla2{
+        border-collapse: collapse;
+        margin: auto;
+        table-layout: fixed;
+    }
+    .verde-lima {
+        background-color: #d9f700;
+    }
+    .verde-claro {
+        background-color: #bff149;
+    }
+    .verde-oliva {
+        background-color: #546026;
+    }
+    .blanca {
+        background-color: #eaebe4;
+    }
+    .verde-lima{
+        background-color: #e7ed30 ;
+    }
+    .gris {
+        background-color: #939982;
+    }
+    .verde-brillante { 
+        background-color:#607809 ;
+    }
+    .verde-amarillo {
+        background-color: #cee38a  ;
+    }
+    .verde-oliva-oscuro{
+        background-color:#2e3c03;
+    }
+    .morada {
+        background-color:rgb(174, 99, 174);
+    }
+    .negra {
+        background-color: black;
+    } 
+ </style>   
+</head>
+<body>
+    <img class="contenedor-cabecera">
+<table class="tabla1">
+    <tr>
+        <td rowspan="2" class="verde-lima">
+                <img src="img/Tabla Periódica/walterwhite.png">
+                <p class="txtGrande">W</p>
+                <p class="txtPequen">Walter White</p>  
+        </td>
+        <td colspan="9" class="negra"></td>
+        <td class="verde-oliva">
+
+                <p class="txtGrande"><b>DE</b></p>
+                <p class="txtPequen">Don Eladio</p>  
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" class="verde-lima">
+
+                <img src="img/Tabla Periódica/hankschrader.png">       
+        </td>
+        <td colspan="4" class="negra"></td>
+        <td rowspan="2" class="verde-claro">
+
+                <p class="txtGrande">He</p>
+                <p class="txtPequen">Hector Salamanca</p>
+                <img src="img/Tabla Periódica/hectorsalamanca.png">  
+        </td>
+        <td rowspan="2" class="verde-claro">
+
+                <p class="txtGrande">TS</p>
+                <p class="txtPequen">Tuco Salamanca</p>
+                <img src="img/Tabla Periódica/tucosalamanca.png">  
+        </td>
+        <td rowspan="2" class="gris">
+
+                <p class="txtGrande">G</p>
+                <p class="txtPequen">Gustavo Fring</p>
+                <img src="img/Tabla Periódica/gustavofrink.png">  
+        </td>
+        <td class="verde-oliva">
+
+                <p class="txtGrande">Ty</p>
+                <p class="txtPequen">Tyrus Kitt</p>  
+        </td>
+        <td class="verde-oliva">
+
+                <p class="txtGrande">Ju</p>
+                <p class="txtPequen">Juan Bolsa</p>  
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" class="verde-lima">
+                <p class="txtGrande">Sk</p>
+                <p class="txtPequen">Skyler White</p>
+                <img src="img/Tabla Periódica/skylerwhite.png">  
+        </td>
+        <td class="blanca">
+                <p class="txtGrande">St</p>
+                <p class="txtPequen">Steven Gomez</p>  
+        </td>
+        <td rowspan="2" class="verde-brillante">
+                <p class="txtGrande">Sa</p>
+                <p class="txtPequen">Soul Goodman</p>
+                <img src="img/Tabla Periódica/saulgoodman.png">
+        </td>   
+        <td rowspan="2" class="verde-brillante">
+                <p class="txtGrande">J</p>
+                 <p class="txtPequena">Jessie Pinkman</p>
+                 <img src="img/Tabla Periódica/jessiepinkman.png">
+        </td>  
+        <td class="verde-oliva-oscuro">
+
+                <p class="txtGrande">SP</p>
+                <p class="txtPequen">Skinny Pete</p>  
+        </td>
+        <td rowspan="2" class="gris">
+
+                <p class="txtGrande">Ga</p>
+                <p class="txtPequen">Gale Boetticher</p>
+                <img src="img/Tabla Periódica/gale.png"> 
+        </td> 
+        <td class="verde-oliva">
+                <p class="txtGrande">To</p>
+                <p class="txtPequen">El Tortuga</p>  
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" class="morada">
+                <p class="txtGrande">Ma</p>
+                <p class="txtPequen">Marie Schrader</p>
+                <img src="img/Tabla Periódica/marieschrader.png"> 
+        </td> 
+        <td class="blanca">
+                <p class="txtGrande">Ra</p>
+                <p class="txtPequen">SAC Ramey</p>  
+        </td>
+        <td rowspan="2" class="verde-oliva-oscuro" id="1">
+                <p class="txtGrande">Bg</p>
+                <p class="txtPequen">Badger</p>
+                <img src="img/Tabla Periódica/badger.png">
+        </td> 
+        <td class="verde-claro">
+                <p class="txtGrande">LS</p>
+                <p class="txtPequen">Leonel Salamanca</p>  
+        </td>
+        <td class="verde-claro">
+                <p class="txtGrande">MS</p>
+                <p class="txtPequen">Marco Salamanca</p>  
+        </td>
+        <td rowspan="2" class="gris">
+                <p class="txtGrande">M</p>
+                <p class="txtPequen">Mike Ehrmantraut</p>
+                <img src="img/Tabla Periódica/mike.png">
+        </td>  
+        <td class="verde-oliva">
+                <p class="txtGrande">Gf</p>
+                <p class="txtPequen">Gaff</p>  
+        </td>
+    </tr>
+    <tr>
+        <td class="verde-lima">
+
+                <p class="txtGrande">WJ</p>
+                <p class="txtPequen">Walt Jr.</p>  
+        </td>
+        <td class="blanca">
+
+                <p class="txtGrande">Ge</p>
+                <p class="txtPequen">ASAC George Merkert</p>  
+        </td>
+        <td class="verde-brillante">
+
+                <p class="txtGrande">Hu</p>
+                <p class="txtPequen">Huell Babineaux</p>  
+        </td>
+        <td class="verde-brillante">
+
+                <p class="txtGrande">OJ</p>
+                <p class="txtPequen">Old Joe</p>  
+        </td>
+        <td class="verde-oliva-oscuro">
+
+                <p class="txtGrande">K8</p>
+                <p class="txtPequen">Kenny a.k.a. "8"</p>  
+        </td>
+        <td class="verde-claro">
+
+                <p class="txtGrande">ND</p>
+                <p class="txtPequen">No-Doze</p>  
+        </td>
+        <td class="gris">
+
+                <p class="txtGrande">Vi</p>
+                <p class="txtPequen">Victor</p>
+        </td>
+        <td class="gris">
+
+                <p class="txtGrande">Ly</p>
+                <p class="txtPequen">Lydia Rodarte-Quayle</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="verde-lima">
+
+                <p class="txtGrande">Ho</p>
+                <p class="txtPequen">Holly White</p> 
+        </td> 
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Te</p>
+                <p class="txtPequen">Ted Beneke</p>  
+        </td>
+        <td class="blanca">
+
+                <p class="txtGrande">Ti</p>
+                <p class="txtPequen">Tim Roberts</p>  
+        </td>
+        <td class="verde-brillante">
+
+                <p class="txtGrande">Ku</p>
+                <p class="txtPequen">Kuby</p>  
+        </td>
+        <td class="verde-brillante">
+
+                <p class="txtGrande">La</p>
+                <p class="txtPequen">Lawson</p>  
+        </td>
+        <td class="verde-oliva-oscuro">
+
+                <p class="txtGrande">Co</p>
+                <p class="txtPequen">Combo Ortega</p>  
+        </td>
+        <td class="verde-oliva-oscuro">
+
+                <p class="txtGrande">Em</p>
+                <p class="txtPequen">Emilio Koyama</p>  
+        </td>
+        <td class="verde-claro">
+
+                <p class="txtGrande">Go</p>
+                <p class="txtPequen">Gonzo</p>  
+        </td>
+        <td class="gris">
+
+                <p class="txtGrande">Mx</p>
+                <p class="txtPequen">Maximino Arciniega</p>
+        </td>
+        <td class="gris">
+
+                <p class="txtGrande">De</p>
+                <p class="txtPequen">Dennis Markowski</p>
+        </td>
+        <td class="gris">
+
+                <p class="txtGrande">Da</p>
+                <p class="txtPequen">Dan Wachsberger</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">El</p>
+                <p class="txtPequen">Elliott Schwartz</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Bo</p>
+                <p class="txtPequen">Bogdan</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Hg</p>
+                <p class="txtPequen">Hugo Archuleta</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Mr</p>
+                <p class="txtPequen">Mr. Pinkman</p>  
+        </td>
+        <td class="verde-brillante">
+
+                <p class="txtGrande">To</p>
+                <p class="txtPequen">Todd Alquist</p>  
+        </td>
+        <td class="verde-oliva-oscuro">
+
+                <p class="txtGrande">Ac</p>
+                <p class="txtPequen">Andrea Cantillo</p>  
+        </td>
+        <td class="verde-oliva-oscuro">
+
+                <p class="txtGrande">JM</p>
+                <p class="txtPequen">Jane Margolis</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">NA</p>
+                <p class="txtPequen">NA Leader</p>  
+        </td>
+        <td class="gris">
+
+                <p class="txtGrande">Ch</p>
+                <p class="txtPequen">Chris Mara</p>
+        </td>  
+        <td class="gris">
+
+                <p class="txtGrande">Du</p>
+                <p class="txtPequen">Duane Chow</p> 
+        </td> 
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Sp</p>
+                <p class="txtPequen">Spooge</p>  
+        </td>
+    </tr>
+    <tr>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Gr</p>
+                <p class="txtPequen">Gretchen Schwartz</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Ca</p>
+                <p class="txtPequen">Carmen Molina</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">JP</p>
+                <p class="txtPequen">Jake Pinkman</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Ms</p>
+                <p class="txtPequen">Mrs. Pinkman</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Cl</p>
+                <p class="txtPequen">Clovis</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">BC</p>
+                <p class="txtPequen">Brock Cantillo</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">DM</p>
+                <p class="txtPequen">Donald Margolis</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Dr</p>
+                <p class="txtPequen">Drew Sharp</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Lo</p>
+                <p class="txtPequen">Lois</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">Dc</p>
+                <p class="txtPequen">Declan</p>  
+        </td>
+        <td class="verde-amarillo">
+
+                <p class="txtGrande">We</p>
+                <p class="txtPequen">Wendy</p>  
+        </td>
+    </tr>
+    </table>
+
+    <br><table class="tabla2">
+        <tr>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">B</p>
+                    <p class="txtPequena">Blue Sky Meth</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/bus.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">Pi</p>
+                    <p class="txtPequena">Roof Pizza</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/pistola.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">Ti</p>
+                    <p class="txtPequena">Tighty Whiteys</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/pocima.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">R</p>
+                    <p class="txtPequena">Respirator</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/movil.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">Pl</p>
+                    <p class="txtPequena">Plate</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/mosca.png">       
+            </td>
+        </tr>
+        <tr>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/cristal.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">RV</p>
+                    <p class="txtPequena">The Crystal Ship</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/pizza.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">Lz</p>
+                    <p class="txtPequena">Laser Base</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/calzoncillos.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">HCI</p>
+                    <p class="txtPequena">Hydrochloric Acid</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/mascara.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">Fl</p>
+                    <p class="txtPequena">Flip Phone</p>  
+            </td>
+            <td class="verde-lima">
+
+                    <img src="img/Tabla Periódica/plato.png">       
+            </td>
+            <td class="verde-lima">
+
+                    <p class="txtGrande">Fy</p>
+                    <p class="txtPequena">Fly</p>  
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

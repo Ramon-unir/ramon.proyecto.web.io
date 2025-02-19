@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Bad - Que comience el juego!</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <style>
+        body {
+            background-image: url("img/fondo-form.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="get" name="ficha">
+        <fieldset>
+            <legend>Formulario</legend>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                Nombre:<input type="text" name="nombre" placeholder="Indica tu nombre de pila">
+                <br>Apellidos: <input type="text" name="apellidos" placeholder="Indica tu 1º y 2º apellido">
+                <br>DNI: <input type="text" name="DNI" placeholder="Indica tu DNI">
+                <br>Introducir dirección de correo: <input type="email" name="Correo Electronico" id="Email">
+            </fieldset>
+            <fieldset>
+                <legend>Direccion Postal</legend>
+                Calle:<input type="text" name="calle" placeholder="Indica el nombre de la calle">
+                <br>Numero: <input type="number" name="numero" id="numero de la calle">
+                <br>Piso: <input type="text" name="Piso" placeholder="Indica el piso">
+                <br>Codigo Postal: <input type="text" name="Codigo Postal" placeholder="Escribe aqui tu codigo postal">
+                <br>Ciudad: <input type="text" name="Ciudad" placeholder="Escribe aqui el nombre de tu ciudad">
+            </fieldset>
+    <fieldset>
+        <legend>Indica tu Genero</legend>
+        <input type="radio" name="Masculino" value="Masculino">Masculino
+        <br><input type="radio" name="Femenino" value="Femenino">Femenino
+        <br><input type="radio" name="Neutro" value="Neutro">Neutro
+    </fieldset>
+    <br>Seleccione Personaje
+    <br><select name="combo" multiple>
+        <optgroup label="Personajes">
+            <option value="1">Jessie Pinkman</option>
+            <option value="2">Walter White</option>
+            <option value="3">Saul Goodman</option>
+            <option value="4">Gustavo Fring</option>
+            <option value="5">Pollos Hermanos</option>
+            <option value="6">Otros Personajes</option>
+            <br><textarea name="Otros" id="">Escribe el nombre de otro personaje</textarea>
+        </optgroup>
+    </select>
+    <br><textarea name="Comentario" id="">comenta Sobre tu aspecto favorito de la serie </textarea>
+    <br><input type="submit" value="Enviar"><input type="reset" value="borrar">
+    <br><input type="file" value="Adjuntar Archivo">
+</body>
+</html>
